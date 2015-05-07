@@ -5,11 +5,6 @@ VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{64734447-C971-47A2-84DE-403200AEA156}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3C9ED84C-6D6F-4DC4-A9E3-146B331ECAED}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
-EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "UniversalStockMarketApp.Web", "src\UniversalStockMarketApp.Web\UniversalStockMarketApp.Web.xproj", "{2169B594-AF7B-4D64-AE6F-4EA1A91B7F0F}"
 EndProject
 Global

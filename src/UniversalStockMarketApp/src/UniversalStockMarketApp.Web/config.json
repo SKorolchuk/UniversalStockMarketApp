@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "Version": "UniversalStockMarketApp.Web"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-UniversalStockMarketApp-Web-71e102a2-603f-4b65-9537-1df0cbf60838;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}
