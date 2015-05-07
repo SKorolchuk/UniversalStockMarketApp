@@ -1,0 +1,32 @@
+﻿@using System.Globalization
+@using UniversalStockMarketApp.Web.Models
+@model System.Collections.Generic.List<UniversalStockMarketApp.Web.Models.CurrencyModel>
+
+@{
+    ViewBag.Title = "Currecy Exchange Rates";
+    Layout = "_Layout";
+}
+
+<div class="panel">
+    <h3>@(ViewBag.IsTommorowRatesAvailable ? "Statistics are using currency rates for tomorrow" : "Statistics are using today currency rates")</h3>
+</div>
+
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+    <tr>
+        <td>Short Name</td>
+        <td>Name</td>
+        <td>Rate</td>
+        <td>Date</td>
+    </tr>
+    </thead>
+    @foreach ( CurrencyModel currency in Model )
+    {
+        <tr class="@(currency.IsRisedInRelateToYesterday ? "success" : "danger")">
+            <td>@currency.CharCode</td>
+            <td>@currency.Name</td>
+            <td>@(double.Parse(currency.Rate, NumberStyles.Any) * double.Parse(currency.Scale, NumberStyles.Any) + " BYR")</td>
+            <td>@currency.Date</td>
+        </tr>
+    }
+</table>
